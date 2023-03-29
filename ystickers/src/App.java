@@ -1,4 +1,6 @@
+import java.io.InputStream;
 import java.net.URI;
+import java.net.URL;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
@@ -27,7 +29,21 @@ public class App {
 
         
         //Exibir e manipular dados
+        var geradora = new StickerGenerator();
         for (Map<String, String> filme : ListadeFilmes) {
+            
+            String urlImagem = filme.get("image");
+            String titulo = filme.get("title");
+
+            InputStream inputStream = new URL(urlImagem).openStream();
+            String nomeArquivo = titulo + ".png";
+
+            geradora.criar(inputStream, nomeArquivo);
+
+            System.out.println(titulo);
+            System.out.println();
+            
+
             System.out.println("Filme: " + "\u001B[35m" + filme.get("title") + "\u001B[37m");
             System.out.println("Ano: " + "\u001B[36m" + filme.get("year") + "\u001B[37m");
             System.out.println("Ranking: " + "\u001B[34m"+filme.get("rank" )+ "\033[32;1m");
