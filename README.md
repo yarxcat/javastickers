@@ -32,3 +32,15 @@ ystickers >> src
 
 [StickGenerator](https://github.com/yarxcat/javastickers/blob/main/ystickers/src/StickerGenerator.java) - Classe geradora de stickers para WhatsApp.
 
+## 🔌 Techs
+Tecnologias utilizadas
+* [Java](https://www.java.com/pt-BR/) -  Linguagem de programação orientada a objetos.
+* [IMDB Api](https://imdb-api.com/) - Fornece dados de filmes e series, como avaliações e ranking de mais assistidos.
+
+## O que é uma API ? 🤓☝️
+`API` significa *Application Programming Interface* ou, em português, *Interface de Programação de Aplicativos*.
+É uma interface que permite que diferentes `sistemas e programas` se comuniquem entre si.  É como se fosse um `intermediário` que possibilita que diferentes programas troquem `informações` de forma `padronizada e automatizada`.
+
+Na programação, uma `API` é uma interface que permite que `desenvolvedores` acessem e utilizem determinadas funcionalidades ou dados de um software ou serviço. Por exemplo, uma `API` de um serviço de mapas pode permitir que um aplicativo utilize as informações de localização para mostrar um mapa na tela do usuário.
+
+
